@@ -105,3 +105,9 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     border-radius: 4px;
 }
+
+/*2 valores = vertical e horizontal*/
+.dsmovie-form-container{
+    padding: 40px 0;
+    max-width: 480px;
+}
