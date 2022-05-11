@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+/*é o mesmo que html, porém mais usado para variáveis*/
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #fff;
+}
 
 *{
     box-sizing: border-box;
@@ -6,7 +12,7 @@
 }
 
 html,body {
-    background-color: #ddd;
+    background-color: var(--bg-gray);
 }
 
 nav{
@@ -14,16 +20,41 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+/*weight = peso, realce*/
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /*background-color = cor de fundo*/
 header{
-    background-color: #4D41C0;
-    color: white;
-    ;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 /* unset = sem cor, a:hover = quando passar o mouse em cima, 
 text-decoration = sem decoração no texto*/
 a, a:hover{
     text-decoration: none;
     color: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img{
+    margin-right: 10px;
 }
