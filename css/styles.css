@@ -171,6 +171,11 @@ h6 {
     margin-bottom: 20px;
 }
 
+.dsmovie-form-group option, .dsmovie-form-group select{
+    color: var(--star-yellor);
+    text-align: center;
+}
+
 .dsmovie-form-description h3 {
     font-size: 13px;
     font-weight: 700;
